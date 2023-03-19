@@ -82,3 +82,13 @@ function solution(num_list) {
 
   return answer;
 }
+
+//https://school.programmers.co.kr/learn/courses/30/lessons/120816
+function solution(slice, n) {
+  var answer = 0;
+  if (n % slice > 0) {
+    return parseInt(n / slice) + 1;
+  } else {
+    return parseInt(n / slice);
+  }
+}
