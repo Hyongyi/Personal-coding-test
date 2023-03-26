@@ -116,3 +116,19 @@ function solution(array) {
   let max = Math.max(...array);
   return [max, array.indexOf(max)];
 }
+//https://school.programmers.co.kr/learn/courses/30/lessons/120891
+
+function solution(order) {
+  return order
+    .toString()
+    .split("")
+    .map((v) => (Number(v) % 3 == 0 && Number(v) !== 0 ? 1 : 0))
+    .reduce((a, b) => a + b);
+}
+
+// 우수한 풀이
+
+function solution(order) {
+  var answer = [...order.toString().matchAll(/[3|6|9]/g)].length;
+  return answer;
+}
