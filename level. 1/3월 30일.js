@@ -49,6 +49,7 @@ function solution(arr, divisor) {
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/12948
 
+
 function solution(phone_number) {
   var x = phone_number.split("");
   for (i = 0; i < phone_number.length - 4; i++) {
